@@ -1,0 +1,48 @@
+{
+  "abilities": [
+    { "id": "a-01", "name": "凝气三篇", "type": "ability", "obtainedEra": "era-02-entry", "category": "基础" },
+    { "id": "a-02", "name": "引力术", "type": "ability", "obtainedEra": "era-02-entry", "category": "基础" },
+    { "id": "a-03", "name": "黄泉升窍决", "type": "ability", "obtainedEra": "era-02-entry", "category": "功法" },
+    { "id": "a-04", "name": "极境", "type": "ability", "obtainedEra": "era-02-entry", "category": "特殊" },
+    { "id": "a-05", "name": "古神诀", "type": "ability", "obtainedEra": "era-03-demon-sea", "category": "传承" },
+    { "id": "a-06", "name": "寂灭指", "type": "ability", "obtainedEra": "era-06-sky-fortune", "category": "指法" },
+    { "id": "a-07", "name": "化魔指", "type": "ability", "obtainedEra": "era-06-sky-fortune", "category": "指法" },
+    { "id": "a-08", "name": "黄泉指", "type": "ability", "obtainedEra": "era-06-sky-fortune", "category": "指法" },
+    { "id": "a-09", "name": "杀戮剑诀", "type": "ability", "obtainedEra": "era-06-sky-fortune", "category": "剑法" },
+    { "id": "a-10", "name": "斩罗诀", "type": "ability", "obtainedEra": "era-06-sky-fortune", "category": "剑法" },
+    { "id": "a-11", "name": "第三目本源神通", "type": "ability", "obtainedEra": "era-07-luotian", "category": "本源" },
+    { "id": "a-12", "name": "残夜", "type": "ability", "obtainedEra": "era-10-war", "category": "自创", "description": "王林自创第一神通" },
+    { "id": "a-13", "name": "朱雀圣火", "type": "ability", "obtainedEra": "era-10-war", "category": "传承" },
+    { "id": "a-14", "name": "朱雀九玄变", "type": "ability", "obtainedEra": "era-11-immortal-mansion", "category": "传承" },
+    { "id": "a-15", "name": "古道无仙", "type": "ability", "obtainedEra": "era-13-ancient-tomb", "category": "传承" },
+    { "id": "a-16", "name": "仙人不灭体", "type": "ability", "obtainedEra": "era-13-ancient-tomb", "category": "体质" },
+    { "id": "a-17", "name": "古祖一指", "type": "ability", "obtainedEra": "era-15-xiangang", "category": "指法" },
+    { "id": "a-18", "name": "踏天一步", "type": "ability", "obtainedEra": "era-15-xiangang", "category": "身法" }
+  ],
+  "treasures": [
+    { "id": "t-01", "name": "天逆珠", "type": "treasure", "obtainedEra": "era-02-entry", "category": "至宝", "description": "王林最重要的法宝，五行圆满后能感悟本源" },
+    { "id": "t-02", "name": "巨富剑", "type": "treasure", "obtainedEra": "era-02-entry", "category": "剑" },
+    { "id": "t-03", "name": "射神车", "type": "treasure", "obtainedEra": "era-04-revenge", "category": "法器" },
+    { "id": "t-04", "name": "昆极鞭", "type": "treasure", "obtainedEra": "era-05-immortal-land", "category": "法宝" },
+    { "id": "t-05", "name": "十亿尊魂幡", "type": "treasure", "obtainedEra": "era-05-immortal-land", "category": "魂幡" },
+    { "id": "t-06", "name": "散魔铠甲", "type": "treasure", "obtainedEra": "era-06-sky-fortune", "category": "铠甲" },
+    { "id": "t-07", "name": "因果鞭", "type": "treasure", "obtainedEra": "era-07-luotian", "category": "法宝" },
+    { "id": "t-08", "name": "古神皮甲", "type": "treasure", "obtainedEra": "era-08-thunder", "category": "铠甲" },
+    { "id": "t-09", "name": "封仙印", "type": "treasure", "obtainedEra": "era-09-hunt", "category": "印" },
+    { "id": "t-10", "name": "朱雀圣器", "type": "treasure", "obtainedEra": "era-11-immortal-mansion", "category": "圣器" },
+    { "id": "t-11", "name": "李广弓", "type": "treasure", "obtainedEra": "era-13-ancient-tomb", "category": "至宝", "description": "仙人至宝，以生机为箭" },
+    { "id": "t-12", "name": "杀戮本源剑", "type": "treasure", "obtainedEra": "era-14-border-war", "category": "本源剑" },
+    { "id": "t-13", "name": "定界罗盘", "type": "treasure", "obtainedEra": "era-16-finale", "category": "至宝", "description": "灭空级至宝" }
+  ],
+  "beasts": [
+    { "id": "b-01", "name": "蚊兽", "type": "beast", "obtainedEra": "era-04-revenge", "description": "后进化为虚无蚊王" },
+    { "id": "b-02", "name": "雷蛙", "type": "beast", "obtainedEra": "era-04-revenge" },
+    { "id": "b-03", "name": "银角雷兽", "type": "beast", "obtainedEra": "era-06-sky-fortune" },
+    { "id": "b-04", "name": "五彩蝴蝶", "type": "beast", "obtainedEra": "era-09-hunt" },
+    { "id": "b-05", "name": "星痕貂", "type": "beast", "obtainedEra": "era-11-immortal-mansion" },
+    { "id": "b-06", "name": "黑色巨猿", "type": "beast", "obtainedEra": "era-12-cloud-sea" },
+    { "id": "b-07", "name": "幽冥兽", "type": "beast", "obtainedEra": "era-13-ancient-tomb", "description": "本命之兽，后成为天道载体" },
+    { "id": "b-08", "name": "海龙", "type": "beast", "obtainedEra": "era-15-xiangang" },
+    { "id": "b-09", "name": "天狮兽", "type": "beast", "obtainedEra": "era-15-xiangang" }
+  ]
+}

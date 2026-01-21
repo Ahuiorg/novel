@@ -1,0 +1,85 @@
+/* 仙逆编年史 - 字体系统 */
+
+/* Google Fonts 导入 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=ZCOOL+XiaoWei&family=Orbitron:wght@400;500;700&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+:root {
+  /* 字体族 */
+  --font-display: 'ZCOOL XiaoWei', 'Noto Serif SC', serif;
+  --font-body: 'Noto Serif SC', 'PingFang SC', 'Microsoft YaHei', serif;
+  --font-accent: 'Orbitron', 'Rajdhani', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  
+  /* Fluid 字号 (使用 clamp 实现平滑缩放) */
+  --text-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.75rem);      /* 11-12px */
+  --text-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.875rem);     /* 13-14px */
+  --text-base: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);    /* 14-16px */
+  --text-lg: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);       /* 16-18px */
+  --text-xl: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);        /* 18-20px */
+  --text-2xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);      /* 20-24px */
+  --text-3xl: clamp(1.5rem, 1.25rem + 1.25vw, 1.875rem);    /* 24-30px */
+  --text-4xl: clamp(1.75rem, 1.5rem + 1.25vw, 2.25rem);     /* 28-36px */
+  --text-5xl: clamp(2rem, 1.5rem + 2.5vw, 3rem);            /* 32-48px */
+  --text-6xl: clamp(2.5rem, 2rem + 2.5vw, 3.75rem);         /* 40-60px */
+  --text-7xl: clamp(3rem, 2.5rem + 2.5vw, 4.5rem);          /* 48-72px */
+  
+  /* 行高 */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+  --leading-loose: 2;
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  line-height: var(--leading-tight);
+}
+
+h1 {
+  font-size: var(--text-5xl);
+  background: linear-gradient(135deg, var(--immortal-gold) 0%, var(--lightning-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  font-size: var(--text-4xl);
+}
+
+h3 {
+  font-size: var(--text-3xl);
+}
+
+/* 正文样式 */
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--text-primary);
+}
+
+/* 强调文本 */
+.text-accent {
+  font-family: var(--font-accent);
+  letter-spacing: 0.05em;
+}
+
+/* 数字强调（年份等） */
+.text-number {
+  font-family: var(--font-accent);
+  font-weight: 500;
+  color: var(--lightning-cyan);
+}
+
+/* 引用文本 */
+blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--text-secondary);
+  border-left: 3px solid var(--immortal-gold);
+  padding-left: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}

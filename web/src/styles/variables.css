@@ -1,0 +1,68 @@
+/* 仙逆编年史 - 暗夜星辰主题色彩系统 */
+:root {
+  /* 响应式断点 (Mobile-First) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  
+  /* 背景层次 */
+  --void-black: #050510;
+  --cosmos-dark: #0a0a1f;
+  --nebula-blue: #1a1a3e;
+  --deep-space: #0d0d2b;
+  
+  /* 强调色 */
+  --immortal-gold: #ffd700;
+  --immortal-gold-dim: rgba(255, 215, 0, 0.6);
+  --lightning-cyan: #00d4ff;
+  --lightning-cyan-dim: rgba(0, 212, 255, 0.6);
+  --blood-crimson: #dc143c;
+  --spirit-purple: #9b59b6;
+  --jade-green: #00ff88;
+  
+  /* 文字 */
+  --text-primary: #e8e8f0;
+  --text-secondary: #8888aa;
+  --text-muted: #555577;
+  
+  /* 毛玻璃效果 */
+  --glass-bg: rgba(10, 10, 31, 0.75);
+  --glass-border: rgba(255, 215, 0, 0.15);
+  --glass-blur: 12px;
+  
+  /* 发光效果 */
+  --glow-gold: 0 0 20px rgba(255, 215, 0, 0.4);
+  --glow-cyan: 0 0 20px rgba(0, 212, 255, 0.4);
+  --glow-subtle: 0 0 30px rgba(255, 215, 0, 0.15);
+  
+  /* Fluid 间距 (使用 clamp 实现平滑缩放) */
+  --spacing-xs: clamp(2px, 0.125rem + 0.1vw, 4px);
+  --spacing-sm: clamp(4px, 0.25rem + 0.25vw, 8px);
+  --spacing-md: clamp(12px, 0.75rem + 0.5vw, 16px);
+  --spacing-lg: clamp(16px, 1rem + 0.5vw, 24px);
+  --spacing-xl: clamp(20px, 1.25rem + 0.75vw, 32px);
+  --spacing-2xl: clamp(32px, 2rem + 1vw, 48px);
+  --spacing-3xl: clamp(40px, 2.5rem + 1.5vw, 64px);
+  
+  /* 圆角 */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  
+  /* 动画时序 */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 600ms;
+  --duration-slower: 1000ms;
+  
+  /* z-index 层级 */
+  --z-background: 0;
+  --z-content: 10;
+  --z-header: 100;
+  --z-nav: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+  --z-effects: 400;
+}
