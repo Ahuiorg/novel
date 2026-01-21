@@ -24,7 +24,6 @@ export function useSmoothScroll(
   const config = { ...DEFAULT_OPTIONS, ...options }
 
   const velocity = ref(0)
-  const targetScroll = ref(0)
   const isScrolling = ref(false)
   const isDragging = ref(false)
 
@@ -99,7 +98,7 @@ export function useSmoothScroll(
       animationId = null
     }
 
-    const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX
+    const clientX = 'touches' in e ? e.touches[0]?.clientX ?? 0 : e.clientX
     startX = clientX
     startScrollLeft = containerRef.value.scrollLeft
     lastTouchX = clientX
@@ -113,7 +112,7 @@ export function useSmoothScroll(
   function handleDragMove(e: MouseEvent | TouchEvent) {
     if (!isDragging.value || !containerRef.value) return
 
-    const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX
+    const clientX = 'touches' in e ? e.touches[0]?.clientX ?? 0 : e.clientX
     const now = Date.now()
     const dt = Math.max(1, now - lastTouchTime)
 

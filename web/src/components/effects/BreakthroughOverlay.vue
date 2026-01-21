@@ -188,7 +188,7 @@ onUnmounted(() => {
 
 const overlayStyle = computed(() => ({
   opacity: props.visible ? 1 : 0,
-  pointerEvents: props.visible ? 'auto' : 'none',
+  pointerEvents: (props.visible ? 'auto' : 'none') as 'auto' | 'none',
 }))
 </script>
 

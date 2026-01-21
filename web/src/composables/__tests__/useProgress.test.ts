@@ -65,8 +65,8 @@ describe('useProgress', () => {
     addToHistory('era-02-entry', '入门之路')
     addToHistory('era-01-birth', '凡人之躯') // Re-read
     
-    expect(readingHistory.value[0].eraId).toBe('era-01-birth')
-    expect(readingHistory.value[1].eraId).toBe('era-02-entry')
+    expect(readingHistory.value[0]?.eraId).toBe('era-01-birth')
+    expect(readingHistory.value[1]?.eraId).toBe('era-02-entry')
     expect(readingHistory.value).toHaveLength(2)
   })
 
@@ -94,7 +94,7 @@ describe('useProgress', () => {
     
     const recent5 = getRecentHistory(5)
     expect(recent5).toHaveLength(5)
-    expect(recent5[0].eraId).toBe('era-10')
+    expect(recent5[0]?.eraId).toBe('era-10')
   })
 
   it('should clear history', () => {
@@ -116,7 +116,7 @@ describe('useProgress', () => {
     removeFromHistory('era-01-birth')
     
     expect(readingHistory.value).toHaveLength(1)
-    expect(readingHistory.value[0].eraId).toBe('era-02-entry')
+    expect(readingHistory.value[0]?.eraId).toBe('era-02-entry')
   })
 
   it('should format timestamp correctly', () => {
